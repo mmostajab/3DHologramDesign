@@ -4,24 +4,8 @@
 \usetikzlibrary{arrows}
 \pagestyle{empty}
 \begin{document}
-	\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1.}
-	\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
-	\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
 	\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-	\draw [color=cqcqcq,, xstep=1.0cm,ystep=1.0cm] (-8.467122069968747,-6.589825014733034) grid (8.379094573859742,6.424469911690455);
-	\draw[->,color=black] (-8.467122069968747,0.) -- (8.379094573859742,0.);
-	\foreach \x in {-8.,-7.,-6.,-5.,-4.,-3.,-2.,-1.,1.,2.,3.,4.,5.,6.,7.,8.}
-	\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
-	\draw[->,color=black] (0.,-6.589825014733034) -- (0.,6.424469911690455);
-	\foreach \y in {-6.,-5.,-4.,-3.,-2.,-1.,1.,2.,3.,4.,5.,6.}
-	\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
-	\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
 	\clip(-8.467122069968747,-6.589825014733034) rectangle (8.379094573859742,6.424469911690455);
-	\draw(0.,0.) circle (7.cm);
-	\draw(0.,7.) circle (7.cm);
-	\draw(7.,0.) circle (7.cm);
-	\draw(0.,-7.) circle (7.cm);
-	\draw(-7.,0.) circle (7.cm);
 	\draw (3.5,6.062177826491071)-- (7.,0.);
 	\draw (7.,0.)-- (3.5,-6.06217782649107);
 	\draw (3.5,-6.06217782649107)-- (-3.5,-6.062177826491071);
@@ -34,78 +18,11 @@
 	\draw (0.,0.)-- (-3.5,-6.062177826491071);
 	\draw (0.,0.)-- (-7.,0.);
 	\draw (0.,0.)-- (-3.5,6.06217782649107);
-	\draw(0.,0.) circle (0.5cm);
 	\draw (-0.5,0.)-- (-0.25,0.4330127018922193);
 	\draw (-0.25,0.4330127018922193)-- (0.25,0.43301270189221935);
 	\draw (0.25,0.43301270189221935)-- (0.5,0.);
 	\draw (0.5,0.)-- (0.25,-0.4330127018922193);
 	\draw (0.25,-0.4330127018922193)-- (-0.25,-0.43301270189221935);
 	\draw (-0.25,-0.43301270189221935)-- (-0.5,0.);
-	\begin{scriptsize}
-	\draw [fill=uuuuuu] (0.,0.) circle (1.5pt);
-	\draw[color=uuuuuu] (0.10214064291935242,0.20891632065093513) node {$A$};
-	\draw [fill=xdxdff] (7.,0.) circle (2.5pt);
-	\draw[color=xdxdff] (7.102166736930277,0.2703045042661403) node {$B$};
-	\draw[color=black] (-3.4671034313895146,5.779893983730801) node {$c$};
-	\draw [fill=uuuuuu] (0.,7.) circle (1.5pt);
-	\draw[color=uuuuuu] (-0.6055543028487851,6.36308172807525) node {$C$};
-	\draw[color=black] (-3.4671034313895146,12.762799869960384) node {$d$};
-	\draw[color=black] (3.5329226626214103,5.779893983730801) node {$e$};
-	\draw [fill=uuuuuu] (0.,-7.) circle (1.5pt);
-	\draw[color=uuuuuu] (-0.19016813902835655,-6.252190004849405) node {$D$};
-	\draw[color=black] (-3.4671034313895146,-1.2337059943063855) node {$f$};
-	\draw [fill=uuuuuu] (-7.,0.) circle (1.5pt);
-	\draw[color=uuuuuu] (-6.8978854510915735,0.20891632065093513) node {$E$};
-	\draw[color=black] (-10.45174485266635,5.779893983730801) node {$g$};
-	\draw [fill=uuuuuu] (-3.5,6.06217782649107) circle (1.5pt);
-	\draw[color=uuuuuu] (-3.390180067719065,6.270999452652442) node {$F$};
-	\draw [fill=uuuuuu] (-6.062177826491071,3.5) circle (1.5pt);
-	\draw[color=uuuuuu] (-5.959420414312087,3.7080427867176278) node {$G$};
-	\draw [fill=uuuuuu] (-6.06217782649107,-3.5) circle (1.5pt);
-	\draw[color=uuuuuu] (-5.959420414312087,-3.2902101454157577) node {$H$};
-	\draw [fill=uuuuuu] (-3.5,-6.062177826491071) circle (1.5pt);
-	\draw[color=uuuuuu] (-3.390180067719065,-5.8531668113505715) node {$I$};
-	\draw [fill=uuuuuu] (3.5,-6.06217782649107) circle (1.5pt);
-	\draw[color=uuuuuu] (3.60984602629186,-5.8531668113505715) node {$J$};
-	\draw [fill=uuuuuu] (6.062177826491071,-3.5) circle (1.5pt);
-	\draw[color=uuuuuu] (6.16370170015079,-3.2902101454157577) node {$K$};
-	\draw [fill=uuuuuu] (6.06217782649107,3.5) circle (1.5pt);
-	\draw[color=uuuuuu] (6.16370170015079,3.7080427867176278) node {$L$};
-	\draw [fill=uuuuuu] (3.5,6.062177826491071) circle (1.5pt);
-	\draw[color=uuuuuu] (3.60984602629186,6.270999452652442) node {$M$};
-	\draw[color=black] (5.071389936030404,3.0327727669503712) node {$a$};
-	\draw[color=black] (5.071389936030404,-2.7837576305903156) node {$b$};
-	\draw[color=black] (0.040601951982992636,-5.684349306408758) node {$h$};
-	\draw[color=black] (-5.00557070479851,-2.7837576305903156) node {$i$};
-	\draw[color=black] (-5.00557070479851,3.0327727669503712) node {$j$};
-	\draw[color=black] (0.040601951982992636,5.948711488672616) node {$k$};
-	\draw[color=black] (1.9944553892124157,3.0327727669503712) node {$l$};
-	\draw[color=black] (3.5329226626214103,-0.11337164332889182) node {$m$};
-	\draw[color=black] (1.5790692253919874,-3.029310365051136) node {$n$};
-	\draw[color=black] (-1.9286361579805202,-2.7837576305903156) node {$p$};
-	\draw[color=black] (-3.4671034313895146,0.37773382559274926) node {$q$};
-	\draw[color=black] (-1.4978653214260018,3.278325501411192) node {$r$};
-	\draw [fill=xdxdff] (-0.5,0.) circle (2.5pt);
-	\draw[color=xdxdff] (-0.3901688845715258,0.2703045042661403) node {$N$};
-	\draw[color=black] (-0.2055528117624465,0.25495745836233896) node {$s$};
-	\draw [fill=uuuuuu] (-0.25,-0.43301270189221935) circle (1.5pt);
-	\draw[color=uuuuuu] (-0.14401412082608672,-0.22080096465550084) node {$O$};
-	\draw [fill=uuuuuu] (0.25,-0.4330127018922193) circle (1.5pt);
-	\draw[color=uuuuuu] (0.3636800793988815,-0.22080096465550084) node {$P$};
-	\draw [fill=uuuuuu] (0.,0.) circle (1.5pt);
-	\draw[color=uuuuuu] (0.10214064291935242,0.20891632065093513) node {$Q$};
-	\draw [fill=uuuuuu] (-0.25,0.4330127018922193) circle (1.5pt);
-	\draw[color=uuuuuu] (-0.14401412082608672,0.6539806518611724) node {$R$};
-	\draw [fill=uuuuuu] (0.25,0.43301270189221935) circle (1.5pt);
-	\draw[color=uuuuuu] (0.3636800793988815,0.6539806518611724) node {$S$};
-	\draw [fill=uuuuuu] (0.5,0.) circle (1.5pt);
-	\draw[color=uuuuuu] (0.6098348431443206,0.20891632065093513) node {$T$};
-	\draw[color=black] (-0.12862944809199678,0.22426336655473642) node {$t$};
-	\draw[color=black] (0.07137129745117253,0.36238677968894795) node {$f_1$};
-	\draw[color=black] (0.22521802479207198,0.2703045042661403) node {$g_1$};
-	\draw[color=black] (0.22521802479207198,0.08613995342052487) node {$h_1$};
-	\draw[color=black] (0.07137129745117253,-0.0059423220022828405) node {$i_1$};
-	\draw[color=black] (-0.09786010262381688,0.08613995342052487) node {$j_1$};
-	\end{scriptsize}
 	\end{tikzpicture}
 \end{document}
